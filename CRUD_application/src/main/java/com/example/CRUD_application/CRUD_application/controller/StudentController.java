@@ -34,7 +34,7 @@ ResponseEntity<Student>(studentService.saveStudent(student),HttpStatus.CREATED);
     return studentService.getAllStudent();
 
  }
- @GetMapping("(id)")
+ @GetMapping("{id}")
  public ResponseEntity<Student>getStudentById(@PathVariable("id")long studentID){
     return new
     ResponseEntity<Student>(studentService.getStudentById(studentID),HttpStatus.OK);}
