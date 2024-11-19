@@ -12,6 +12,6 @@ public interface StudentRepository extends JpaRepository<Student,Long> {
    @Query("SELECT department FROM Student WHERE id = ?1")
     String findDepartmentById(long id);
     @Modifying
-    @Query("DELETE FROM Student WHERE yearsOfEnrollment = ?1")
+    @Query("DELETE FROM Student WHERE yearsOfEnrollment = ?2021")
 void deleteStudentByYearsOfEnrollment(int yearsOfEnrollment); 
 }
