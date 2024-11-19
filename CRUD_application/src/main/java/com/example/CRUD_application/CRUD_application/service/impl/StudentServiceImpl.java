@@ -65,3 +65,4 @@ public void deleteStudent(long id){
     studentRepository.deleteStudentByYearsOfEnrollment(years);
     return "Deleted Successfully";  
 }
+}
