@@ -52,6 +52,16 @@ public void deleteStudent(long id){
     studentRepository.findById(id).orElseThrow(()-> new RuntimeException());
     studentRepository.deleteById(id);
 }
-
-    
+    @Override
+    public List<Student> getStudentByYearsOfExperience(int years){
+    return studentRepository.findByYearsOfEnrollment(years);
+    }
+    @Override
+    public String findDepartmentById(long id){
+    return studentRepository.findDepartmentById(id);
+    }
+    @Override
+    public String deleteStudentByYearsOfEnrollment(int years){
+    studentRepository.deleteStudentByYearsOfEnrollment(years);
+    return "Deleted Successfully";  
 }
