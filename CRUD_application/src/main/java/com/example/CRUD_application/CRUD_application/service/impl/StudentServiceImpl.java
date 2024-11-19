@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import com.example.CRUD_application.CRUD_application.model.Student;
 import com.example.CRUD_application.CRUD_application.repository.StudentRepository;
-import com.example.CRUD_application.CRUD_application.service.impl.StudentService;
-
 import java.util.List;
 import java.util.Optional;
 
